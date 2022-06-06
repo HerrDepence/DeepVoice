@@ -1,0 +1,5 @@
+.idea
+Release
+DeepVoice.Client/node_modules
+DeepVoice.Server/bin
+DeepVoice.Server/obj

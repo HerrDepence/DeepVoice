@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "module": "esnext",
+    "target": "esnext",
+    "removeComments": true,
+    "noEmitOnError": true,
+    "sourceMap": false,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@altv"
+    ],
+    "outDir": "G:/Projekte/AltV Server/resources/DeepVoice/DeepVoice.Client",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "source/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepVoice.Server", "DeepVoice.Server\DeepVoice.Server.csproj", "{91BFB71C-6B9D-4BDA-B83E-E4209B16AEBD}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "DeepVoice.Client", "DeepVoice.Client\DeepVoice.Client.njsproj", "{89782E66-6170-4275-BFAB-DAE0C34B5D86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91BFB71C-6B9D-4BDA-B83E-E4209B16AEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91BFB71C-6B9D-4BDA-B83E-E4209B16AEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91BFB71C-6B9D-4BDA-B83E-E4209B16AEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91BFB71C-6B9D-4BDA-B83E-E4209B16AEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

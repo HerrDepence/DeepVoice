@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "voiceRanges": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "keyMute": 109,
+  "keyChange": 107
+}
