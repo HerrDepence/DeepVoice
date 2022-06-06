@@ -48,13 +48,14 @@ Parameter: None
 Config is located in `%SERVER_ROOT%/resources/DeepVoice/config.json`.
 ```json
 {
-	"version": "1.0",
+	"version": "1.0.1",
 	"voiceRanges": [1, 2, 3, 4],
 	"keyMute": 109,
 	"keyChange": 107,
 	"enableMegaphone": true,
 	"keyToggleMegaphone": 44,
-	"megaphoneRange": 20
+	"megaphoneRange": 20,
+	"partialAudio": true
 }
 ```
 

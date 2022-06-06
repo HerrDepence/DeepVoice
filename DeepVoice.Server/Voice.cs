@@ -17,7 +17,7 @@ public class Voice : Resource
     {
         LoadConfig();
 
-        foreach (var range in _config.VoiceRanges) _voiceChannels.Append(Alt.CreateVoiceChannel(true, range));
+        foreach (var range in _config.VoiceRanges) _voiceChannels.Append(Alt.CreateVoiceChannel(_config.PartialAudio, range));
 
         if (_config.EnableMegaphone)
         {
@@ -39,8 +39,13 @@ public class Voice : Resource
         try
         {
             var config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(configFile));
+            
+            if (config!.KeyChange == -1) Environment.FailFast("Missing config entry for keyChange.");
+            if (config!.KeyMute == -1) Environment.FailFast("Missing config entry for keyMute.");
+            if (config!.KeyToggleMegaphone == -1) Environment.FailFast("Missing config entry for keyToggleMegaphone.");
+            if (config!.VoiceRanges.Length == 0) Environment.FailFast("Missing voiceRanges.");
+            
             _config = config!;
-
             Alt.Log($"[DeepVoice] New status: enabled. Version: {_config.Version}");
         }
         catch (Exception ex)

@@ -33,7 +33,6 @@
         <Content Include="config.json" />
         <Content Include="package.json" />
         <Content Include="tsconfig.json" />
-        <Content Include="tsconfig.prod.json" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="source\" />
